@@ -1,0 +1,28 @@
+{
+  "name": "tasklocator",
+  "version": "1.0.0",
+  "description": "Making a backend project that help us track our habits and task",
+  "homepage": "https://github.com/sameedShah56/Todo-app-backend#readme",
+  "bugs": {
+    "url": "https://github.com/sameedShah56/Todo-app-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameedShah56/Todo-app-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2",
+    "morgan": "^1.12.1",
+    "nodemon": "^3.1.14"
+  }
+}
