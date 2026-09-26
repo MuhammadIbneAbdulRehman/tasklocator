@@ -3,17 +3,20 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        min: [ture, 'Atleast 3 charater are required'],
+        required: true,
+        unique: true
     },
     email: {
         type: String,
-        unique: [true, "Email is Required"]
+        required: [true, "Email is Required"],
+        unique: true
     },
     password: {
         type: String,
-        required: [true, "password is required"]
+        required: [true, "password is required"],
+        minlength: [3, 'three charaters minimum required']
     }
 }, { timestamps: true })
 
-const user = mongoose.model('user', userSchema);
-export default user
+const User = mongoose.model('user', userSchema);
+export default User
