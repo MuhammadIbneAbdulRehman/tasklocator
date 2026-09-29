@@ -2,10 +2,12 @@ import express from 'express';
 import morgan from 'morgan'
 import authroute from './router/auth.route.js';
 import tasksroute from './router/tasks.route.js';
+import cors from "cors"
 const app = express();
 
 app.use(express.json())
 app.use(morgan("dev"))
+app.use(cors())
 app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
